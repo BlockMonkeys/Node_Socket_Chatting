@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="assets/css/main.css")
+        title Blockmonkey's Chat Application
+    body
+        .title BlockMonkey's Chat Application || Node ﹠ SocketIO
+        .chatBox
+        .controller
+            .chat_controller_userNone_display
+                input.user_name(type="text", placeholder="닉네임을 입력하세요")
+                button(onclick="setNickname()") 시작하기
+            .chat_controller_user
+                input.user_chat(type="text" placeholder="메세지를 입력하세요.")
+                button(onclick="sendMsg()") 전송
+        .showUsers
+
+
+    script(src="/socket.io/socket.io.js")
+    script(src="assets/main.js")
